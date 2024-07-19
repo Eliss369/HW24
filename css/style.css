@@ -39,6 +39,10 @@ body {
 .contact-icon {
   fill: var(--grey-color);
 }
+.contact-icon:is(:hover :focus) {
+  fill: #2196f3;
+  cursor: pointer;
+}
 /* header-flex */
 .header {
   width: 1230px;
@@ -71,12 +75,6 @@ body {
   color: var(--grey-color);
 }
 
-.header-contacts-link:hover,
-.header-contacts-link:focus,
-.header-email-link:hover,
-.header-email-link:focus {
-  color: var(--blue-color);
-}
 
 .header-nav-list {
   margin-right: 344px;
@@ -194,7 +192,7 @@ body {
 .team-social-item:is(:hover, :focus) {
   background-color: var(--blue-color);
   border-radius: 50%;
-  padding: 10px;
+  padding: 9px;
   
 }
 .team-social-item:is(:hover, :focus) .team-social-icon {
@@ -400,10 +398,13 @@ body {
 /* customers */
 .customers-div {
   height: 370px;
+
 }
-.customers-list-item:is(:hover, :focus),
+.customers-list-item:is(:hover :focus) {
+  fill: #2196f3;
+}
 .customers-pic:is(:hover :focus) {
-  color: var(--blue-color);
+  
   border: 1px solid var(--blue-color);
 }
 .customers-list-item:not(:last-child) {
@@ -416,8 +417,12 @@ body {
   background-position: center;
   fill: #757575;
   margin-left: 55px;
-}
 
+}
+.customers-list-item:hover,
+.customers-list-item:focus {
+  fill: #2196f3;
+}
 .customers-list-item {
   width: 170px;
   height: 92px;
@@ -445,19 +450,22 @@ body {
   background-color: var(--dark-blue-color);
   margin: 0 auto;
   padding-top: 60px;
+  margin-top: 101px;
 }
 .footer-list {
   margin-left: 215px;
-  margin-bottom: 60px;
+
+}
+.footer-social-list {
+  align-items: center;
+margin-top: 20px;
 }
 .footer-title-svg {
   font-size: 14px;
 font-weight: 700;
 line-height: 16px;
 color: var(--white-color);
-display: flex;
-justify-content: center;
-margin-bottom: 100px;
+margin-left: 70px;
 }
 .footer-email,
 .footer-number {
@@ -466,6 +474,28 @@ margin-bottom: 100px;
 }
 .footer-web {
   color: var(--blue-color);
+}
+.footer-address {
+  display: flex;
+}
+
+.footer-social-item:is(:hover, :focus) .footer-social-icon {
+  fill: var(--white-color);
+}
+.footer-social-item {
+  fill: var(--white-color);
+background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  padding: 10px;
+}
+.footer-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.footer-social-item:is(:hover, :focus) {
+  background-color: var(--blue-color);
+  border-radius: 50%;
+  padding: 10px;
+  
 }
 
 .footer-text {
