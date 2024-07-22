@@ -34,20 +34,21 @@
         </nav>
         <ul class="header-contacts header-flex">
           <li class="header-contacts-item">
-            <svg class="contact-icon" width="16" height="12">
-              <use href="./images/sprite.svg#envelope"></use>
-            </svg>
             <a href="mailto:info@devstudio.com" class="header-email-link"
               >info@devstudio.com</a
             >
+            <svg class="contact-icon" width="16" height="12">
+              <use href="./images/sprite.svg#envelope"></use>
+            </svg>
           </li>
           <li class="header-contacts-item">
-            <svg class="contact-icon" width="10" height="16">
-              <use href="./images/sprite.svg#smartphone"></use>
-            </svg>
+            
             <a href="tel:+380961111111" class="header-contacts-link"
               >+38 096 111 11 11</a
             >
+            <svg class="contact-icon" width="10" height="16">
+              <use href="./images/sprite.svg#smartphone"></use>
+            </svg>
           </li>
         </ul>
       </div>
@@ -61,7 +62,7 @@
       </section>
       <section class="advatages">
         <div class="container">
-          <h2 class="advatages-title">Детальна інформація</h2>
+          <h2 class="advatages-title visually-hidden">Детальна інформація</h2>
           <ul class="advatages-list advatages-flex">
             <li class="advatages-list-item bg-detail">
               <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -367,10 +368,12 @@
             </li>
         </ul>
     <footer class="footer">
+      <div class="footer-address-wrap container">
       <a href="./index.html" class="footer-logo">
         <span class="footer-web">Web</span>Studio</a
       >
       <address class="footer-address">
+        <div class="footer-flex">
         <ul class="footer-list">
           <li class="footer-item">
             <p class="footer-text">м. Київ, пр-т Лесі Українки, 26</p>
@@ -418,10 +421,11 @@
             </a>
           </li>
           </ul>
+        </div>
     </main>
-    
+
       </address>
-      
+    </div>
     </footer>
   </body>
 </html>
